@@ -2,6 +2,17 @@
   "name": "snapship",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Bryan Berger",
+    "email": "contact@bryanberger.dev",
+    "url": "https://bryanberger.dev"
+  },
+  "description": "Create Next.js apps in one second.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BryanBerger98/snapship.git"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -14,9 +25,15 @@
     "errorMsg": "Please, set a valid branch name."
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.453.0",
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021"
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",

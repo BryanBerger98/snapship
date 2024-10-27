@@ -12,5 +12,10 @@ const compat = new FlatCompat({
   recommendedConfig: js.configs.recommended,
   allConfig: js.configs.all,
 });
-const config = [ ...compat.extends('next/core-web-vitals', 'next/typescript', 'bryanberger') ];
+const config = [ ...compat.extends('next/core-web-vitals', 'next/typescript', 'bryanberger'), {
+  rules: {
+    'react/require-default-props': 'off',
+    'react/prop-types': 'off',
+  },
+} ];
 export default config;
